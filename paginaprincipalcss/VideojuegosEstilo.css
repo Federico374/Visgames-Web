@@ -1,0 +1,479 @@
+/** Se aplica a todos los elementos **/
+* {
+  list-style: none;
+  font-family: 'Orbitron', sans-serif;
+  box-sizing: border-box;
+}
+
+/** Estilos para el body y background de la página **/
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #000000, #FF0000);
+  overflow-x: hidden;
+}
+
+/** Estilos del menú header (registro, logo, etc) **/
+header .menu {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #333;
+  align-items: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.menu .navi a {
+  padding: 10px;
+}
+
+header .menu img {
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(230, 218, 218);
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: 0 3px #000000;
+}
+
+/** Estilo del primer título ¿Quiénes Somos? **/
+.caja {
+  height: auto;
+  width: auto;
+  margin: 50px 50px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px #d91010;
+  display: inline-block;
+}
+
+.nosotros h1 {
+  font-size: 30px;
+  display: inline-block;
+  margin: auto;
+  width: auto;
+  white-space: nowrap;
+  border-right: 5px solid;
+  color: rgb(230, 218, 218);
+  margin: 0;
+  font-family: monospace;
+  overflow: hidden;
+  animation: typing 3s infinite alternate steps(28);
+  overflow: hidden;
+}
+
+.nosotros p {
+  color: rgb(230, 218, 218);
+  font-size: 20px;
+  margin: 5px;
+  font-family: monospace;
+}
+
+/** Estilo de la categoría de juegos y de main **/
+.titulo2 {
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px;
+  margin: 50px 50px;
+  justify-content: center;
+  display: flex;
+  border: 10px solid;
+  border-radius: 10px;
+  border-style: double;
+  color: #d91010;
+  background-color: #000000;
+  text-shadow: 0 0 80px rgb(255, 0, 0);
+  animation: titilacion 1s linear infinite;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.8);
+}
+
+.juegos {
+  width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: aparecer 1s ease;
+}
+
+.juegos:last-child {
+  margin-right: 0;
+}
+
+.juegos:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.juegos:hover::before {
+  opacity: 1;
+}
+
+.juegos:hover .portada {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+.juegos::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(9, 0, 0) 95%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.juegos .ftofondo {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 250px;
+  height: 300px;
+  border: solid;
+}
+
+.juegos .portada {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+main .cajajuegos {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#gta5 .portada {
+  bottom: 8%;
+}
+
+#Minecraft .portada {
+  bottom: 6%;
+  height: 200px;
+  width: 200px;
+}
+
+#Counter .portada {
+  width: 35%;
+  height: 70%;
+  bottom: 3%;
+  transform: scale(1.0);
+}
+
+#Valorant .portada {
+  width: 60%;
+  height: 80%;
+  bottom: 8%;
+}
+
+#Zomboid .portada {
+  bottom: -20px;
+  height: 100%;
+  width: 80%;
+}
+
+#Callofduty .portada {
+  bottom: 20px;
+  height: 80%;
+  width: 80%;
+}
+
+#Rainbowsix .portada {
+  bottom: 20px;
+  height: 70%;
+  width: 80%;
+}
+
+#Borderlands3 .portada {
+  bottom: 20px;
+  height: 70%;
+  width: 80%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centra verticalmente los elementos dentro del slide */
+}
+
+.swiper-container {
+  max-width: 100%;
+}
+
+.cajajuegos.gratuitos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cajajuegos.gratuitos div {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #b90e0e;
+  overflow: hidden;
+  text-align: center;
+}
+
+.juego-slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.juego-slide-content h3,
+.juego-slide-content p {
+  margin: 10px 0;
+}
+
+.conteiner {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-container {
+  max-width: 100%;
+}
+
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next-custom {
+  right: 50px; 
+}
+
+.swiper-button-prev-custom {
+  left: 40px; 
+}
+
+.swiper-custom-navigation {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding-bottom: 100px;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/** Estilos para el footer **/
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.programadores h4 {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.programadores ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programadores li {
+  margin: 5px 0;
+}
+
+.redes a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  display: block;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/** Keyframes y Media Queries **/
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 22%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/** Efecto titilante para el "catálogo" **/
+@keyframes titilacion {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+}
+
+/** Aparece el catálogo de juegos **/
+@keyframes aparecer {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/** Media Queries - Se adaptó esta parte de la página para dispositivos móviles (responsive) **/
+@media (max-width: 768px) {
+  header .menu {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .cajajuegos.gratuitos {
+    padding: 5px;
+  }
+
+  .cajajuegos.gratuitos div {
+    max-width: 100%;
+  }
+  .cajajuegos.gratuitos img {
+    height: auto;
+    width: 90%;
+  }
+
+  header .menu img {
+    margin-bottom: 10px;
+  }
+
+  .menu .navi {
+    margin-top: 20px;
+  }
+
+  .nosotros h1 {
+    font-size: 20px;
+  }
+
+  /** No sé cómo hacerlo responsive, hice lo que pude **/
+  @keyframes typing {
+    from {
+      width: 60%;
+    }
+    to {
+      width: 0;
+    }
+  }
+
+  .caja {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+
+  .caja p {
+    font-size: medium;
+  }
+
+  .juegos {
+    margin-right: 0;
+  }
+
+  main .cajajuegos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .programadores h4 {
+    margin-top: 10px;
+  }
+
+  .programadores ul {
+    text-align: center;
+  }
+
+  .redes {
+    margin-top: 10px;
+  }
+
+  .Copyright {
+    padding: 10px;
+  }
+}

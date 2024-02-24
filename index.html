@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visgames</title>
+    <link rel="stylesheet" href="../paginaprincipalcss/VideojuegosEstilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="Fotos/icono pagina.png">
+    <script src="/javascript/paginagames.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="/index.html"><img src="Fotos/LogoVisgames.webp" alt="logo"></a>
+            <nav class="navi">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Noticias</a>
+                <a href="#" class="nav-link">Eventos</a>
+                <a href="/html pagina principal/Ayuda.html" class="nav-link">Ayuda</a>
+            </nav>
+            <div class="registro">
+                <ul>
+                    <li><a href="/html pagina principal/registro.html">Registrate</a></li>
+                    <li><a href="html pagina principal/IniciarSesion.html">Iniciar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="conteiner">
+            <div class="caja">
+                <div class="nosotros">
+                    <h1>¿Quienes Somos?</h1>
+                    <br>
+                    <p>En el apasionante mundo de los videojuegos, la aventura nunca termina. Si eres un amante de los videojuegos y 
+                        estás buscando el lugar perfecto para mantenerte al día con las últimas noticias, 
+                        descubrir los eventos más emocionantes, explorar los juegos más populares y 
+                        desentrañar los mejores trucos y consejos, ¡has llegado al sitio adecuado!. En nuestra página, compartimos la misma 
+                        pasión que tú sientes por los videojuegos. Sabemos que los videojuegos no son solo un pasatiempo, son una forma de vida, una fuente 
+                        inagotable de entretenimiento, emoción y creatividad. Desde los clásicos que nos hicieron enamorarnos de este mundo hasta las últimas 
+                        innovaciones tecnológicas que nos dejan boquiabiertos, estamos aquí para celebrar y explorar todo lo que los videojuegos 
+                        tienen para ofrecer.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <main class="center">
+        <section>
+            <h2 class="titulo2">Catálogo</h2>
+            <div class="cajajuegos">
+                <div class="juegos" id="Counter">
+                    <a href="#">
+                        <img class="ftofondo" src="Fotos/Counter strike.jpg" alt="CounterStrike">
+                        <img class="portada" src="Fotos/terrorista.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="gta5">
+                    <a href="/juegos/Gta5/index.html">
+                        <img class="ftofondo" src="Fotos/gta5.webp" alt="Grand Thef Auto Five">
+                        <img class="portada" src="Fotos/michael.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="Minecraft">
+                    <a href="../juegos/Minecraft/MINECRAFT.html">
+                        <img class="ftofondo" src="Fotos/minecraft.webp" alt="Minecraft">
+                        <img class="portada" src="Fotos/caballo.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="Valorant">
+                    <a href="#">
+                        <img class="ftofondo" src="Fotos/valorant.webp" alt="Valorant">
+                        <img class="portada" src="Fotos/reyna png.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="Zomboid">
+                    <a href="../juegos/Projectzomboid/index.html">
+                        <img class="ftofondo" src="Fotos/project_zomboid.webp" alt="zomboid">
+                        <img class="portada" src="Fotos/zombie.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="Callofduty">
+                    <a href="#">
+                        <img class="ftofondo" src="Fotos/call of duty modern warfare.jpeg" alt="Call of Duty Modern Warfare">
+                        <img class="portada" src="Fotos/ghost.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="Rainbowsix">
+                    <a href="#">
+                        <img class="ftofondo" src="Fotos/rainbowsix.c218a526-5572-4719-9f0e-be10b16cd42a" alt="Rainbow Six Siege">
+                        <img class="portada" src="Fotos/tachanka.png" alt="">
+                    </a>
+                </div>
+                <div class="juegos" id="Borderlands3">
+                    <a href="#">
+                        <img class="ftofondo" src="Fotos/borderlands3.jpeg" alt="Borderlands 3">
+                        <img class="portada" src="Fotos/pjborderlands.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="titulo2">Juegos Gratis</h2>
+            <!-- el contenedor swiper para los juegos -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper" id="juegos-gratuitos">
+                <!-- se agregan los juegos -->
+              </div>
+              <!-- pone un contenedor para los botones -->
+              <div class="swiper-custom-navigation">
+                <!-- aca van los botones del slider  -->
+                <div class="swiper-button-next-custom">Siguiente</div>
+                <div class="swiper-button-prev-custom">Anterior</div>
+              </div>
+            </div>
+          </section>
+    </main>   
+
+    <footer class="footer">
+        <div class="container">
+            <div class="programadores">
+                <h4>Programadores 👨‍💻</h4>
+                <ul>
+                    <li>Federico Amato</li>
+                    <li>Maximiliano J. Eloy</li>
+                    <li>Agus (se bajo del proyecto)</li>
+                    <li>Antonio (se bajo del proyecto)</li>
+                </ul>
+            </div>
+            <p class="Copyright">Visgames Copyright © 2023</p>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank"><img src="Fotos/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="Fotos/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="Fotos/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

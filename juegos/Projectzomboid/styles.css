@@ -1,0 +1,133 @@
+*{
+    list-style: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #FF0000);
+    color: #fff;
+    
+}
+a{
+    text-decoration: none;
+}
+
+header .menu {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .menu .navi a{ padding: 10px;}
+  
+  header .menu img {height: 50px;}
+  
+  a {
+    text-decoration: none;
+    color: rgb(230, 218, 218);
+  }
+  
+  a:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 3px #000000;
+  }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.section h1 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+
+
+.center-iframe-container {
+    text-align: center;
+}
+
+.center-iframe-container iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .programadores h4 {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .programadores ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .programadores li {
+    margin: 5px 0;
+  }
+  
+  .redes a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    display: block; 
+  }
+  
+  
+  .footer img {
+    width: 30px; 
+    height: 30px;
+    margin-bottom: 10px; 
+  }
+  
+  
+  .footer p {
+    margin: 0; /
+  }
+  
